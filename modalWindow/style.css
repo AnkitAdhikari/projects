@@ -22,11 +22,12 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  padding: 0 3.2rem;
 }
 .language {
   width: 33%;
 }
-.html-img {
+.img {
   width: 100%;
 }
 .textbox {
