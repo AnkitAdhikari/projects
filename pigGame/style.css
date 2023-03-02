@@ -1,0 +1,12 @@
+.active-player {
+  background-color: rgb(0, 174, 255);
+}
+
+h1 {
+  text-align: center;
+}
+
+.playground {
+  width: 50%;
+  margin: 200px auto 0;
+}
