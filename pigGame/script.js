@@ -20,8 +20,10 @@ btnRoll.addEventListener("click", () => {
     document.querySelector(`.player--${activePlayer}`).textContent =
       currentScore;
   } else {
+    currentScore = 0;
     section0.classList.toggle("active--player");
     section1.classList.toggle("active--player");
+    activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
 console.log(btnRoll);
