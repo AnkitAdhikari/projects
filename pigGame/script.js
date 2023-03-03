@@ -28,7 +28,6 @@ btnRoll.addEventListener("click", () => {
     if (!(dice === 1)) {
       // showing in dom
       currentScore += dice;
-      console.log(dice);
       document.querySelector(`.player--${activePlayer}`).textContent =
         currentScore;
     } else {
