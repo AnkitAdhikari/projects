@@ -16,6 +16,7 @@ function switchPlayer() {
   currentScore = 0;
   section0.classList.toggle("active--player");
   section1.classList.toggle("active--player");
+  document.querySelector(`.player--${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
 }
 
