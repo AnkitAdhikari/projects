@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+.projects::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: #807772;
+  /* background-color: #313131; */
+  outline: 1px solid #000;
+}
+.projects::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -34,6 +47,49 @@ header {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   /* word-spacing: 0.8rem; */
+}
+
+/* main {
+  overflow: scroll;
+} */
+
+.projects {
+  /* border: 0.5rem solid #f17f42; */
+  border-top: 1rem solid #ec7144;
+  border-right: 1rem solid #ec7144;
+  border-left: 1rem solid #ec7144;
+  width: 70%;
+  /* height: 100%; */
+  margin: 0 auto;
+  color: #e6d6cd;
+  overflow: scroll;
+}
+
+.project {
+  display: flex;
+  width: 70%;
+  margin: 3.2rem auto;
+  border: 2px solid #313131;
+  gap: 2.6rem;
+}
+
+.project-img-container {
+  width: 30%;
+}
+
+.project-img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.project-img:hover {
+  transform: scale(1.1);
+}
+.project-info {
+  flex-basis: 70%;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem 2rem;
 }
 
 footer {
