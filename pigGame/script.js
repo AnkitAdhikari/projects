@@ -42,7 +42,7 @@ btnHold.addEventListener("click", () => {
     document.querySelector(`.score--${activePlayer}`).textContent =
       score[activePlayer];
     //winning condition
-    if (score[activePlayer] >= 20) {
+    if (score[activePlayer] >= 50) {
       document.querySelector(`.player--${activePlayer}`).textContent = "winner";
       document
         .querySelector(`.section--${activePlayer}`)
