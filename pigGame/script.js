@@ -44,6 +44,12 @@ btnHold.addEventListener("click", () => {
     //winning condition
     if (score[activePlayer] >= 20) {
       document.querySelector(`.player--${activePlayer}`).textContent = "winner";
+      document
+        .querySelector(`.section--${activePlayer}`)
+        .classList.remove("active--player");
+      document
+        .querySelector(`.section--${activePlayer}`)
+        .classList.add("winner--player");
       isGameOver = true;
     } else {
       switchPlayer(); //also make currscore = 0

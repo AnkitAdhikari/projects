@@ -20,6 +20,10 @@ body {
   background: rgba(255, 255, 255, 0.4) !important;
 }
 
+.winner--player {
+  background-color: #00d9ff !important;
+}
+
 h1 {
   text-align: center;
   font-size: 5.2rem;
