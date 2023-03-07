@@ -55,9 +55,9 @@ header {
 
 .projects {
   /* border: 0.5rem solid #f17f42; */
-  border-top: 1rem solid #ec7144;
-  border-right: 1rem solid #ec7144;
-  border-left: 1rem solid #ec7144;
+  border-top: 0.1rem solid #ec7144;
+  border-right: 0.1rem solid #ec7144;
+  border-left: 0.1rem solid #ec7144;
   width: 70%;
   /* height: 100%; */
   margin: 0 auto;
