@@ -24,6 +24,7 @@ function switchPlayer() {
 btnRoll.addEventListener("click", () => {
   if (!isGameOver) {
     const dice = Math.trunc(Math.random() * 6) + 1;
+    document.querySelector("img").src = `image/dice-${dice}.png`;
     // checking for 1
     if (!(dice === 1)) {
       // showing in dom
