@@ -51,6 +51,8 @@ btnHold.addEventListener("click", () => {
       document
         .querySelector(`.section--${activePlayer}`)
         .classList.add("winner--player");
+      document.querySelector(".dice-container").style.display = "none";
+      // console.dir(document.querySelector(".dice-container"));
       isGameOver = true;
     } else {
       switchPlayer(); //also make currscore = 0
