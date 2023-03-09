@@ -101,3 +101,23 @@ h1 {
   width: 100%;
   box-shadow: 0rem 0rem 1.5rem 0.1rem rgba(0, 0, 0, 0.25);
 }
+
+.btn-new {
+  display: inline-block;
+  width: 12rem;
+  height: 4rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0.25rem solid whitesmoke;
+  border-radius: 999rem;
+  box-shadow: 0rem 0rem 2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-new:active {
+  transform: translate(-50%, 2%);
+  box-shadow: 0rem 0rem 1.5rem 0.1rem rgba(0, 0, 0, 0.25);
+}
