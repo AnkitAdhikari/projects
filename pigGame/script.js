@@ -7,6 +7,7 @@ const section1 = document.querySelector(".section--1");
 // selecting button
 const btnRoll = document.querySelector(".btn-roll");
 const btnHold = document.querySelector(".btn-hold");
+const btnNew = document.querySelector(".btn-new");
 
 const score = [0, 0];
 let currentScore = 0;
@@ -58,4 +59,20 @@ btnHold.addEventListener("click", () => {
       switchPlayer(); //also make currscore = 0
     }
   }
+});
+
+btnNew.addEventListener("click", () => {
+  document.querySelector(".score--1").textContent = 0;
+  document.querySelector(".score--0").textContent = 0;
+  document.querySelector(`.player--${activePlayer}`).textContent = 0;
+  document.querySelector(".dice-container").style.display = "block";
+  document.querySelector(`.section--0`).classList.add("active--player");
+  document
+    .querySelector(`.section--${activePlayer}`)
+    .classList.remove("winner--player");
+  score[0] = 0;
+  score[1] = 0;
+  currentScore = 0;
+  activePlayer = 0;
+  isGameOver = false;
 });
